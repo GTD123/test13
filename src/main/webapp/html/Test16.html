@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id = "demo"></p>
+    <script>
+        var text = "";
+        function myfunc() {
+            try {
+                addddlert("hello");
+            }catch (err){
+                text = "本网页由一个错误。\n\n";
+                text+="错误描述："+err.message+"\n\n";
+                text+="请点击确定继续。\n\n";
+
+            }
+            alert(text);
+        }
+
+
+    </script>
+<button onclick="myfunc()">点这里</button>
+</body>
+</html>

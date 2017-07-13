@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的一个小程序</title>
+</head>
+<body>
+    <script>
+        function hello() {
+
+            var xx = document.getElementById("demo").value;
+            try {
+                if(xx=="") throw "值为空";
+                if(isNaN(xx)) throw "不是数字";
+                if(xx< 5) throw "太小";
+                if(xx>10) throw "太大";
+            }catch (err){
+                yy.innerHTML="错误："+err+"。";
+            }
+
+
+        }
+    </script>
+<p align="center">请输入数字</p>
+    <input type="text" id="demo"/>
+    <button onclick="hello()">提交</button>
+    <p id="mess"></p>
+</body>
+</html>

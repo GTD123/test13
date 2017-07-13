@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="color: #2e6da4; background-color: #0f0f0f" >练习js</h1>
+    <p align="center">这是第一次练习</p>
+<input id="demo" type="text"/>
+    <script>
+        function myfunc() {
+            var x = document.getElementById("demo").value;
+            if(x==""||isNaN(x)){
+                alert("输入的不是数字")
+            }
+        }
+
+    </script>
+<button type="button" onclick="myfunc()">点我</button>
+</body>
+</html>

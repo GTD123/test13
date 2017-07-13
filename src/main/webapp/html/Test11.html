@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var a = "烟笼寒水月笼沙";
+        var b = "秦淮河边近'酒家'"
+        var c = '商女不知亡国恨';
+        document.write(a+"<br>");
+        document.write(b+"<br>");
+        document.write(c+"<br>");
+        var e = 123.000;
+        var f = 124;
+        var g = 444e-2;
+        var h = 345e2
+
+        document.write(e+"<br>");
+        document.write(f+"<br>");
+        document.write(g+"<br>");
+        document.write(h+"<br>")
+
+        var i;
+        var cc = new Array();
+        cc[0] = "红子1";
+        cc[1] = "红子2";
+        cc[2] = "红子3";
+        for (i=0;i<cc.length;i++){
+            document.write(cc[i]+"<br>");
+        }
+
+        var dd = new Array("wangmin","limin","hemin","luomin");
+        for(i=0;i<dd.length;i++){
+            document.write(dd[i]+"<br>");
+        }
+
+        var ff =["猫","狗","鸡"];
+        for(i = 0;i<ff.length;i++){
+            document.write(ff[i]+"<br>");
+        }
+
+        var hh = {
+            name : "hongzi",
+            age :"30",
+            id:38
+        }
+        document.write(hh.name+"<br>");
+        document.write(hh["id"]+"<br>");
+
+        var xxx = new Boolean();
+        document.write(xxx+"<br>");
+        var n = "hello";
+        document.write(n.length+"<br>");
+        document.write(n.indexOf()+"<br>");
+        document.write(n.replace(+"<br>"));
+        document.write(n.search()+"<br>");
+
+        person = new Object();
+        person.name = "李明";
+        person.age = 30;
+        person.sex = "男";
+        document.write(person.name+"是一个"+person.age+"岁的"+person.sex+"人"+"<br>");
+        var jj = "limingshiyigexiaowangbadan";
+        var fff = jj.toUpperCase();
+        document.write(fff+"<br>");
+    </script>
+</body>
+</html>
