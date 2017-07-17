@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button onclick="myfunc()">点击</button>
+    <p id="demo" style="font-family: 'Microsoft Himalaya'; background-color: #2aabd2;color: #0f0f0f; font-size: 100px">hahaha</p>
+<script>
+    function myfunc() {
+        var x="";
+        var txt ="";
+        var person = {name:"limin",age:30,sex:"nan"};
+        for(x in person){
+            txt = txt + person[x];
+        }
+        document.getElementById("demo").innerHTML = txt;
+    }
+
+</script>
+</body>
+</html>
