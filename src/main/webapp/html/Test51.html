@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <button>点击动画</button>
+        <div style="height: 100px; width: 100px; background: #f0ad4e; position: absolute"></div>
+    <script src="../js/jquery-3.2.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var anim = $("div");
+                anim.animate({height:'300px',opacity:'0.4'},2000);
+                anim.animate({width:'300px',opacity:'0.8'},2000);
+                anim.animate({height:'100px',opacity:'0.4'},2500);
+                anim.animate({width:'100px',opacity:'0.8'},3000);
+            });
+        });
+    </script>
+</body>
+</html>

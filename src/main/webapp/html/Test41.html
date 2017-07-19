@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>通过json字符串来创建对象</h1>
+<p>
+    firstName: <span id="fname"></span><br>
+    lastName: <span id="lname"></span><br>
+
+</p>
+<script>
+    var jj = {
+            "emplee":[
+                {"firstName":"liming","lastName":"mingzi"},
+                {"firstName":"lilihong","lastName":"hongzi"},
+                {"firstName":"yuejiao","lastName":"jiaojiao"}
+            ]
+    };
+//    var obj = eval(jj);
+        obj = JSON.parse(jj)
+    document.getElementById("fname").innerHTML = obj.emplee[0].firstName;
+    document.getElementById("lname").innerHTML = obj.emplee[0].lastName;
+</script>
+</body>
+</html>

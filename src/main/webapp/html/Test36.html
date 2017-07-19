@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function loadFunc() {
+            var xmlhttp;
+            if(xmlhttp.XMLHttpRequest){
+                xmlhttp = new XMLHttpRequest();
+            }else{
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if(xmlhttp.readyState==4&&xmlhttp.status==200){
+                    document.getElementById("demo").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("POST","/ajax/demo_post2.asp",true);
+            xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            xmlhttp.send("fname=Bill&lname=Gates");
+        }
+    </script>
+</head>
+<body>
+    <h1>post请求</h1>
+    <button type="button" onclick="loadFunc()">点击这里</button>
+    <p id="demo"></p>
+</body>
+</html>
