@@ -1,0 +1,7 @@
+.dd *{
+    display: block;
+    border: solid 2px lightgray;
+    color: lightgray;
+    padding: 5px;
+    margin: 15px;
+}
